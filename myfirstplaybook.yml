@@ -11,3 +11,9 @@
     apt: 
       name: wget
       state: present
+
+  -name: install git software in ubuntu service
+  apt:
+    name: git
+    state: present
+    
