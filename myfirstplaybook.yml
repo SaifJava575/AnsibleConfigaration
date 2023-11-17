@@ -16,9 +16,9 @@
     apt:
       name: git
       state: present
-      
+
   - name: Ensure that postgresql is started
     ansible.builtin.service:
       name: postgresql
-      state: started   
+      state: present   
  
