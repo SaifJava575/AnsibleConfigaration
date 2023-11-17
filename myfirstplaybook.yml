@@ -11,9 +11,14 @@
     apt: 
       name: wget
       state: present
-      
+
   - name: install git on ansible nodes
     apt:
       name: git
-      state: present   
+      state: present
+      
+  - name: Ensure that postgresql is started
+    ansible.builtin.service:
+      name: postgresql
+      state: started   
  
