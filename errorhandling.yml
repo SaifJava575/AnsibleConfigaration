@@ -9,7 +9,7 @@
 
   - name: install wget
     apt:
-      name: wgetwda
+      name: wget
       statee: present
    
 
